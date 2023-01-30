@@ -35,10 +35,12 @@ function App() {
       if(country.name == "Lithuania") setSmallerCountries(allCountries.filter((area) => area.area < country.area))
     });
     setDisplayCountries(smallerCountries);
+    // Need to make it sync with callback
   }
   const unitByRegion = () => {
     setByArea(allCountries.filter((item) => item.region == "Oceania"));
     setDisplayCountries(countryByArea);
+    // Need to make it sync with callback
   }
   return (
     <Container className="App" fluid>
