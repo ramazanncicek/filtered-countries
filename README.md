@@ -1,2 +1,2 @@
-# filtered-countries
- 
+- npm i
+- npm start
